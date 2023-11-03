@@ -8,18 +8,34 @@
     <title>UOC Boilerplate</title>
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+    <include src="./views/header.html"></include>
+    <div class="detail-container">
+      <article>
+          <h1 class="line"><i class="fas fa-duotone fa-person-hiking"></i>Laguna del campillo<i class="fas fa-duotone fa-person-hiking"></i></h1>
+          <p>El Parque Regional del Sureste nos ofrece este humedal, la laguna de El Campillo, de gran riqueza ambiental, y una senda que bordea la laguna a lo largo de dos kilómetros. Se encuentra en el término municipal de Rivas-Vaciamadrid, a solo 20 km de Madrid.</p>
+          <p>La laguna de El Campillo se encaja entre los cortados de Rivas y el cauce del río Jarama y es uno de los 123 humedales más importantes del parque. Se considera Zona de Reserva Natural y Zona Ecológica Sensible, por lo que se ha impulsado su naturalización, suavizando pendientes, formando orillas, creando isletas y observatorios de avifauna, etcétera.</p>
+          <picture>
+            <source media="(max-width: 799px)" srcset="./assets/images/spots/laguna_campillo_0_800_close.webp">
+            <img src="./assets/images/spots/laguna_campillo_0_800.webp" loading="lazy" alt="Laguna del campillo">
+          </picture>
+          <p>El paisaje de la laguna ha cambiado mucho en los últimos años. Solía ser una zona donde pastaba el ganado y se cazaba, conocida como Soto de Palomarejos, pero en los años 50 se roturó y se transformó en zona de cultivo.</p>
+          <p>Más tarde, en los 60, se inició la extracción de arena y yeso y, al llegar las máquinas por debajo de la capa freática, donde se sitúan las acumulaciones de agua, el líquido fue saliendo hasta formar la laguna artificial gracias a esas filtraciones.</p>
+          <p>En el año 1994 se convirtió en espacio natural protegido y en humedal, por eso está poblada de diversas especies de árboles y habitada por muchos distintos mamíferos, aves e insectos. Mide 5,5 km y tiene una profundidad media de 6 metros, que puede llegar a los 20 en las zonas más profundas.</p>
+          <div class="image-detail-block">
+            <img src="./assets/images/spots/Laguna-del-Campillo-2_cgn_800.webp" loading="lazy" alt="Laguna del campillo 2">
+            <img src="./assets/images/spots/laguna-nubes.webp" loading="lazy" alt="Laguna del campillo con nubes">
+        </div>
+        </article>
+      <div class="comollegar">
+          <h2>Como llegar</h2>
+          <ul>
+              <li><b>En coche:</b> por la A3, salida 19. Se pasa por debajo de la autovía y de la línea del Metro y se toma el desvío a la derecha. Se continúa 1,5 km y se vuelve a girar a la derecha
+                  donde se aparcará el vehículo.</li>
+              <li><b>En metro:</b> L-9, estación Rivas-Vaciamadrid. 10 minutos a pie.</li>
+              <li><b>En autobús:</b> números 311, 311A, 312, 312A, 336, 337 y 332 desde Plaza Conde de Casal hasta la parada Puente de Arganda.</li>
+          </ul>
+      </div>
+      
     </div>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
